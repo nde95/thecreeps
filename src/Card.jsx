@@ -3,7 +3,7 @@ import { robots } from './robots';
 import { CSSProperties } from './card.css';
 import { getRandomRobot } from './robots.js';
 
-
+// template for card display
 const Card = (props) => {
     const randomRobot = getRandomRobot();
     const handleClick = () => {

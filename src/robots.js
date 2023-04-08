@@ -307,6 +307,8 @@ job: 'Professional Origami Artist'
 }
 ];
 
+
+// algo for creeps
 export const getRandomRobot = () => {
   const prefixes = ['Full-time', 'Part-time', 'Amateur'];
   const randomPrefix = prefixes[Math.floor(Math.random() * prefixes.length)];

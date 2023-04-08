@@ -7,6 +7,7 @@ import Card from './Card';
 import { robots } from './robots'; 
 import { getRandomRobot } from './robots.js';
 
+// overall function that creates and maintains creeps
 const App = () => {
   const [cards, setCards] = useState([
     { id: 1, name: 'Robot 1', job: 'Developer' },
@@ -16,6 +17,7 @@ const App = () => {
 
   const generateRandomRobot = () => getRandomRobot();
   
+  // function for shuffle button
   const shuffleCards = () => {
     const newCards = cards.map(card => {
       return {
@@ -26,6 +28,7 @@ const App = () => {
     setCards(newCards);
   }
   
+  // adding card button function
   const addCard = () => {
     if (cards.length < 10) {
     const newCard = { id: cards.length + 1, name: 'Robot', job: 'Worker', randomRobot: generateRandomRobot() };
@@ -35,11 +38,14 @@ const App = () => {
     }
   }
   
+// deleting card button function
   const deleteCard = (id) => {
     const updatedCards = cards.filter(card => card.id !== id);
     setCards(updatedCards);
   }
   
+  // static render of title and random/add buttons, delete
+  // needs to be on the card element in cardjs
   return (
     <div className='tc'>
       <h1 className='f1'>The Creeps</h1>
@@ -52,6 +58,7 @@ const App = () => {
   );
 }
 
+// total render of above function with card component
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
