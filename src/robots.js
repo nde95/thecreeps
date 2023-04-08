@@ -120,9 +120,9 @@ export const robots = [
     job: 'Professional Hula Hooper'
   },
   {
-    id: 20,
-    name: 'Jasmine King',
-    username: 'jasmine.king',
+    id: 51,
+    name: 'Gibralter Lopez',
+    username: 'Gibralter.lopez',
     job: 'Professional Feng Shui Consultant'
   },
   {
