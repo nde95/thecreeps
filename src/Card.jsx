@@ -11,7 +11,7 @@ const Card = (props) => {
     };
     return (
         <div className='tc bg-light-green dib br3 pa3 ma2 grow bw2 shadow-5'>
-            <img alt='creature' src={`https://robohash.org/${randomRobot.id}?set=set2`} />
+            <img alt='creature' src={`https://robohash.org/${randomRobot.username}?set=set2`} />
             <div>
                 <h2>{randomRobot.name}</h2>
                 <p>{randomRobot.job}</p>

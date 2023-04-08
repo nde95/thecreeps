@@ -312,6 +312,7 @@ export const getRandomRobot = () => {
   const randomPrefix = prefixes[Math.floor(Math.random() * prefixes.length)];
   const randomRobot = robots[Math.floor(Math.random() * robots.length)];
   const modifiedJob = `${randomPrefix} ${randomRobot.job}`;
+  const username = robots.username
   return {
     ...randomRobot,
     job: modifiedJob
